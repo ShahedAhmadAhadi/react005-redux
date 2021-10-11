@@ -6,7 +6,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Counter />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
         <p>
@@ -50,7 +51,7 @@ function App() {
             React Redux
           </a>
         </span>
-      </header>
+      </header> */}
     </div>
   );
 }
