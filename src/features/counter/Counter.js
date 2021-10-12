@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
   decrement,
   increment,
-  // incrementByAmount,
-  // incrementAsync,
-  // incrementIfOdd,
+  incrementByAmount,
+  incrementAsync,
+  incrementIfOdd,
   selectCount,
 } from './counterSlice';
 import styles from './Counter.module.css';
@@ -37,7 +37,7 @@ export function Counter() {
         </button>
       </div>
       <div className={styles.row}>
-        {/* <input
+        <input
           className={styles.textbox}
           aria-label="Set increment amount"
           value={incrementAmount}
@@ -60,7 +60,7 @@ export function Counter() {
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
-        </button> */}
+        </button>
       </div>
     </div>
   );
