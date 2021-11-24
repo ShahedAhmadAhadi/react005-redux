@@ -8,7 +8,7 @@ function Counter(props) {
     return (
         <div>
             <div>Counter = {props.value}</div>
-            <button onClick={props.updateCounter}>Increment</button>
+            <button onClick={() => props.updateCounter()}>Increment</button>
         </div>
     )
 }
