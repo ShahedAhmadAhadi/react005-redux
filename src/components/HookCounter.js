@@ -1,6 +1,6 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { updateCounter } from '../redux'
+import { useSelector, useDispatch, connect } from 'react-redux'
+import { fetchUsers, updateCounter } from '../redux'
 
 function HookCounter() {
     const value = useSelector(state => state.counter.value)
