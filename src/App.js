@@ -10,11 +10,11 @@ import ReduxCounter from './components/ReduxCounter';
 
 function App() {
   return (
-    <Provider store={newStore}>
+    <Provider store={store}>
       <div className="App">
-        {/* <Counter />
-        <HookCounter /> */}
-        <ReduxCounter />
+        <Counter />
+        <HookCounter />
+        {/* <ReduxCounter /> */}
       </div>
     </Provider>
   );
