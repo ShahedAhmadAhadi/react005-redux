@@ -1,6 +1,6 @@
 import { INCREMENT } from "./counterTypes"
 
-const updateCounter = () => {
+export const updateCounter = () => {
     return {
         type: INCREMENT
     }

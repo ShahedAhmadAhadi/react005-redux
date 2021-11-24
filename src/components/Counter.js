@@ -1,21 +1,28 @@
 import React from 'react'
-import { store } from '../app/store'
+import { connect } from 'react-redux'
+import { updateCounter } from '../redux'
 
-function increment() {
-    return {
-      type: 'counter/increment'
-    }
-  }
 
-store.dispatch(increment())
-function Counter() {
-    console.log(store.getState())
+function Counter(props) {
+  console.log(props)
     return (
         <div>
-            <div>Counter = {store.getState().counter.value}</div>
-            <button onClick={() => store.dispatch({type : 'counter/increment'})}>Increment</button>
+            <div>Counter = {props.value}</div>
+            <button onClick={() => {props.updateCounter()}}>Increment</button>
         </div>
     )
 }
 
-export default Counter
+const mapStateToProps = (state) => {
+  return {
+    value : state.value
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    updateCounter: dispatch(updateCounter())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Counter)
