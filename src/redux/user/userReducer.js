@@ -1,4 +1,4 @@
-import { LOADING, SUCCESS, ERROR} from './userActions'
+import { REQUEST, SUCCESS, ERROR} from './userTypes'
 
 const initialState = {
     loading: false,
@@ -8,7 +8,7 @@ const initialState = {
 
 const userReducer = (state = initialState, action) => {
     switch (action.type) {
-        case LOADING:
+        case REQUEST:
             return {
                 ...state,
                 loading: true
