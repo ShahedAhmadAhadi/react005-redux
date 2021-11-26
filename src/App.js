@@ -7,6 +7,7 @@ import HookCounter from './components/HookCounter';
 import newStore from './redux/newStore';
 import ReduxCounter from './components/ReduxCounter';
 import Users from './components/Users';
+import UsersList from './components/UsersLIst';
 // import {store} from './redux/store'
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
         {/* <Counter />
         <HookCounter /> */}
         {/* <ReduxCounter /> */}
-        <Users />
+        {/* <Users /> */}
+        <UsersList />
       </div>
     </Provider>
   );
