@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
-import { useSelector, useDispatch, connect} from 'react-redux'
-import { fetchUserRequest, fetchUsers } from '../redux'
+import { connect} from 'react-redux'
+import { fetchUsers } from '../redux'
 
 function Users(props) {
     useEffect(() => {
         props.fetchUsers()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     console.log(props, 'adlfjalfja')

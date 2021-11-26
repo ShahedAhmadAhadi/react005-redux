@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import { useSelector, useDispatch, connect} from 'react-redux'
+import { useSelector, useDispatch} from 'react-redux'
 import { fetchUsers } from '../redux'
 
 function UsersList(props) {    
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchUsers())
-    }, [])
+    }, [dispatch])
 
     const state = useSelector(state => state.user)
 
