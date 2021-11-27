@@ -8,6 +8,7 @@ import newStore from './redux/newStore';
 import ReduxCounter from './components/ReduxCounter';
 import Users from './components/Users';
 import UsersList from './components/UsersLIst';
+import Prac from './components/Prac';
 // import {store} from './redux/store'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         {/* <ReduxCounter /> */}
         {/* <Users /> */}
         <UsersList />
+        <Prac />
       </div>
     </Provider>
   );
