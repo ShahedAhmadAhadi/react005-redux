@@ -9,6 +9,7 @@ import ReduxCounter from './components/ReduxCounter';
 import Users from './components/Users';
 import UsersList from './components/UsersLIst';
 import Prac from './components/Prac';
+import TodoList from './todo-app/TodoList';
 // import {store} from './redux/store'
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <section>
           <h2>Welcome to the Redux Fundamentals example app!</h2>
         </section>
+        <TodoList />
       </div>
     </Provider>
   );
